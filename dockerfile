@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package.json ./
 
-npm install -g npm@latest
+npm install
 
 COPY . .
 
