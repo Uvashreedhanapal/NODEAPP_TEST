@@ -3,8 +3,8 @@ FROM node:latest
 WORKDIR /usr/src/app
 
 COPY package.json ./
-
-npm install
+RUN npm install -g npm@latest
+RUN npm install
 
 COPY . .
 
